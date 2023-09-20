@@ -1,6 +1,14 @@
 import React from "react";
 import List from "../components/List/List";
 
+interface dataList {
+  id: string;
+  name: string;
+  date: string;
+  text: string;
+  label?: any;
+}
+
 export default function ListPage() {
   const dataList = [
     {
