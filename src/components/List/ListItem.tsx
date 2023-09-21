@@ -1,6 +1,14 @@
 import React from "react";
 
-function ListItem(props: any) {
+interface ListItemProps {
+  label: any;
+  name: string;
+  text: string;
+  id: string;
+  date: string;
+}
+
+function ListItem(props: ListItemProps) {
   const lableBox = props.label;
   //데이터 여부 체크
   const labelSize = props.label == undefined ? false : true;
@@ -9,7 +17,7 @@ function ListItem(props: any) {
 
   const labelList =
     labelSize === true && //label 없을 때
-    lableBox.map((label: any) => {
+    lableBox.map((label: string) => {
       let $class;
 
       switch (label) {
