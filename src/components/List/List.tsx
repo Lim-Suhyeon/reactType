@@ -8,7 +8,7 @@ export default function List(props: any) {
   ));
   return (
     <>
-      <ul className="list_bul">{dataLists}</ul>
+      <ul className="list">{dataLists}</ul>
     </>
   );
 }
