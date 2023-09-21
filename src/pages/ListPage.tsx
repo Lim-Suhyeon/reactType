@@ -6,7 +6,7 @@ interface dataList {
   name: string;
   date: string;
   text: string;
-  label?: any;
+  label: string;
 }
 
 export default function ListPage() {
